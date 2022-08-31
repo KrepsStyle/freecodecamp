@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is a survey form</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name
+          <input id="name" type="text" placeholder="Enter your name" required>
+        </label>
+        <label id="email-label">Email
+          <input id="email" type="email" placeholder="Enter your email" required>
+        </label>
+        <label id="number-label">Age
+          <input id="number" type="number" min="13" max="120" placeholder="Enter your age if you want">
+        </label>
+        <label>Which option best describes your current role?
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Student</option>
+            <option value="2">Full Time Job</option>
+          </select>          
+        </label>
+        <label>Would you recommend freeCodeCamp to a friend?
+          <input type="radio" name="recommend" value="recommend">Yes
+          <input type="radio" name="recommend" value="recommend">No
+        </label>
+        <label>What would you like to see improved?
+          <input type="checkbox" name="Front-end Projects" value="Front-end Projects"> Front-end Projects
+          <input type="checkbox" name="Back-end Projects" value="Back-end Projects"> Back-end Projects
+          <input type="checkbox" name="Data Visualization" value="Data Visualization"> Data Visualization
+          <input type="checkbox" name="Challenges" value="Challenges"> Challenges
+        </label>
+        <label>Any comments or suggestions?
+          <textarea name="suggestions" rows="3" cols="30" placeholder="Enter your comment here"></textarea>
+        </label>
+        <input type="submit" id="submit" value="Submit">     
+      </fieldset>
+    </form>    
+  </body>
+</html>
